@@ -19,7 +19,7 @@ function App() {
         <Task detail="Saludar" deleteTask={deleteTask}/>
         <Task detail="Saludar" deleteTask={deleteTask}/>
         <div className='taskCount'>
-          <p>{/* */} items left</p>
+          <p>{/* */} Task left</p>
         </div>
       </div>
       <div className='postitEnd1'></div>
