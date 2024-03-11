@@ -1,35 +1,41 @@
 body {
-  max-width: 1280px;
+  width: 100%;
   height: 850px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
   display: flex;
   justify-content: center;
-
+  background-color: black;
+  z-index: -10;
 }
 
 .postit {
   width: 500px;
   border: 1px solid gray;
-  height: max-content;
+  border-bottom: 0px;
+  max-height: 400px;
+  overflow-y: scroll;
+  scrollbar-width:  none;
   background-color: lightyellow;
 }
 
 .title {
   font-size: 64px;
-  color: black;
+  color: lightyellow;
 }
 
 .taskDiv {
   width: 500px;
   background-color: lightyellow;
   display: flex;
-  height: 50px;
-  border-top: 1px solid gray;
+  height: 49px;
+  border-bottom: 1px solid gray;
+  border-top: 0px;
   align-items: center;
   justify-content: space-between;
 }
+
 
 .taskDetail {
   float: left;
@@ -39,8 +45,8 @@ body {
 
 .deleteBtn {
   color: black;
-  width: 50px;
-  height: 50px;
+  width: 49px;
+  height: 49px;
   float: right;
   background-color: lightyellow;
   font-size: xx-large;
@@ -70,31 +76,35 @@ body {
 }
 
 .taskCount {
-  border-top: 1px solid gray;
+  width: 490px;
   display: flex;
-  height: 20px;
+  height: 50px;
   color: gray;
-  text-align: start;
-  padding: 0px;
-  align-items: start;
-  padding-left: 10px;
+  padding-right: 10px;
+  justify-content: flex-end;
+  border: 1px solid gray;
+  border-top: 0px;
+  background-color: lightyellow;
+  align-content: center;
 }
 
-p {
-  margin-top: 0px;
-}
 
 form {
   display: flex;
-  width: 100%;
+  width: 500px;
   height: 50px;
-  border: 0px solid gray;
+  border: 1px solid gray;
+  border-bottom: 0px solid gray;
+  padding: 0px;
 }
 
 input {
-  width: 100%;
+  width: 500px;
   background: lightyellow;
   border: 0px solid gray;
-  padding-left: 10px;
   color: black;
+}
+
+input::placeholder{
+  padding: 10px;
 }
